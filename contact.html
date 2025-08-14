@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Estepp Innovations</title>
   <meta name="description" content="Estepp Innovations — Engineering, manufacturing, and design solutions.">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header class="header">
     <div class="container nav">
-      <div class="brand"><a href="index.html">Estepp Innovations</a></div>
-      <nav class="menu"><a href="index.html" class="">Home</a> <a href="about.html" class="">About</a> <a href="contact.html" class="active">Contact</a></nav>
+      <div class="brand">
+        <span class="badge">EI</span><a href="index.html">Estepp Innovations</a>
+      </div>
+      <nav class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <button class="cta-top" onclick="location.href='contact.html'">Get a Quote</button>
+      <div class="hamburger" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></div>
+    </div>
+    <div id="mobile-menu" class="mobile">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a href="contact.html"><strong>Get a Quote →</strong></a>
     </div>
   </header>
 
@@ -23,7 +30,7 @@
   <p>Tell us about your project. We’ll get back to you promptly.</p>
 </section>
 
-<section class="mt-4">
+<section class="grid">
   <div class="card">
     <form name="contact">
       <label class="mt-2">Name</label>
@@ -32,9 +39,14 @@
       <input type="email" name="email" placeholder="you@example.com" required>
       <label class="mt-2">Message</label>
       <textarea name="message" placeholder="What can we build together?" required></textarea>
-      <button class="btn" type="submit" onclick="alert('This is a static demo form. Connect a form service to receive submissions.')">Send</button>
+      <button class="btn" type="submit" onclick="alert('Static demo: connect Formspree/Basin/Netlify to receive messages.')">Send</button>
     </form>
-    <p class="mt-3"><small class="muted">Tip: Connect a form handler like Formspree, Basin, or Netlify Forms to receive messages.</small></p>
+    <p class="mt-3"><small class="muted">Tip: Use a form service (Formspree/Basin/Netlify) for submissions.</small></p>
+  </div>
+  <div class="card">
+    <h3>Direct</h3>
+    <p>Email: <a href="mailto:info@esteppinnovations.com">info@esteppinnovations.com</a></p>
+    <p class="mt-2">Based in Michigan, USA</p>
   </div>
 </section>
 
@@ -43,12 +55,10 @@
   <footer class="footer">
     <div class="container inner">
       <div>&copy; <span id="year"></span> Estepp Innovations</div>
-      <div><small class="muted">Built on GitHub Pages</small></div>
+      <div class="links"><a href="about.html">About</a><a href="contact.html">Contact</a></div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

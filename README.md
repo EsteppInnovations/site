@@ -1,26 +1,21 @@
-# Estepp Innovations — Basic 3-Page Site
+# Estepp Innovations — Modern Theme (Orange/Grey/Black)
 
-A minimal static site ready for GitHub Pages.
+A responsive 3-page static site with a sticky scrolling menu, mobile hamburger, and clean orange/grey/black palette.
 
-## Files
+## Pages
 - `index.html` — Home
 - `about.html` — About
 - `contact.html` — Contact
-- `404.html` — Custom not-found page
-- `assets/css/styles.css` — Shared styles
+- `404.html` — Not found
+- `assets/css/styles.css` — Theme styles (customize colors in :root)
+- `assets/js/main.js` — Scroll header, mobile menu, active link
 
 ## Deploy to GitHub Pages
-1. Create or open your repo (public).
-2. Upload all files at the repo root exactly as provided.
-3. Go to **Settings → Pages**:
-   - Source: **Deploy from a branch**
-   - Branch: **main / (root)**
-   - Custom domain: `esteppinnovations.com`
-   - Check **Enforce HTTPS**
-4. Commit any change to trigger a fresh build if the site looks cached.
-   - Test with `https://esteppinnovations.com/?v=1` to bypass cache.
+1. Upload all files to your repo root (or `docs/` if Pages is set to that).
+2. Settings → Pages → Source: **Deploy from a branch** (main / root).
+3. Custom domain: `esteppinnovations.com`, then **Enforce HTTPS**.
+4. Commit any change to trigger a fresh build. Test with `?v=1` to bypass cache.
 
-## Edit
-- Update text in each HTML file.
-- Add images in an `assets/img/` folder and reference them via relative paths.
-- To highlight the current page tab, each page sets the corresponding nav link with the `active` class.
+## Customize
+- Colors: edit CSS variables in `:root` in `assets/css/styles.css`.
+- Logo: replace the "EI" badge in the header with an SVG or image.

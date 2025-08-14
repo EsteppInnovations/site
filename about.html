@@ -5,28 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Estepp Innovations</title>
   <meta name="description" content="Estepp Innovations — Engineering, manufacturing, and design solutions.">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header class="header">
     <div class="container nav">
-      <div class="brand"><a href="index.html">Estepp Innovations</a></div>
-      <nav class="menu"><a href="index.html" class="">Home</a> <a href="about.html" class="active">About</a> <a href="contact.html" class="">Contact</a></nav>
+      <div class="brand">
+        <span class="badge">EI</span><a href="index.html">Estepp Innovations</a>
+      </div>
+      <nav class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <button class="cta-top" onclick="location.href='contact.html'">Get a Quote</button>
+      <div class="hamburger" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></div>
+    </div>
+    <div id="mobile-menu" class="mobile">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a href="contact.html"><strong>Get a Quote →</strong></a>
     </div>
   </header>
 
   <main class="container">
 
 <section class="hero">
-  <h1>About Estepp Innovations</h1>
-  <p>We’re a Michigan-based engineering studio focused on practical, high-performance solutions across product design, prototyping, and industrial automation.</p>
+  <h1>About</h1>
+  <p>Estepp Innovations is a Michigan-based studio building practical solutions across product design, prototyping, and industrial automation.</p>
 </section>
 
-<section class="mt-4">
+<div class="section-title"><span class="dot"></span><h2>Approach</h2></div>
+<section class="grid">
   <div class="card">
-    <h3>Our Approach</h3>
-    <p>Iterative design, rigorous testing, and clear communication. We don’t overcomplicate— we deliver results.</p>
+    <h3>Iterative</h3>
+    <p>Fast cycles with tight feedback loops.</p>
+  </div>
+  <div class="card">
+    <h3>Transparent</h3>
+    <p>Clear communication, predictable delivery.</p>
+  </div>
+  <div class="card">
+    <h3>Results-first</h3>
+    <p>We ship what works — no unnecessary complexity.</p>
   </div>
 </section>
 
@@ -35,12 +51,10 @@
   <footer class="footer">
     <div class="container inner">
       <div>&copy; <span id="year"></span> Estepp Innovations</div>
-      <div><small class="muted">Built on GitHub Pages</small></div>
+      <div class="links"><a href="about.html">About</a><a href="contact.html">Contact</a></div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

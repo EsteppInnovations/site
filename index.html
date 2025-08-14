@@ -5,37 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Estepp Innovations — Home</title>
   <meta name="description" content="Estepp Innovations — Engineering, manufacturing, and design solutions.">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header class="header">
     <div class="container nav">
-      <div class="brand"><a href="index.html">Estepp Innovations</a></div>
-      <nav class="menu"><a href="index.html" class="active">Home</a> <a href="about.html" class="">About</a> <a href="contact.html" class="">Contact</a></nav>
+      <div class="brand">
+        <span class="badge">EI</span><a href="index.html">Estepp Innovations</a>
+      </div>
+      <nav class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <button class="cta-top" onclick="location.href='contact.html'">Get a Quote</button>
+      <div class="hamburger" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></div>
+    </div>
+    <div id="mobile-menu" class="mobile">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a href="contact.html"><strong>Get a Quote →</strong></a>
     </div>
   </header>
 
   <main class="container">
 
 <section class="hero">
-  <h1>Engineering & Manufacturing Solutions</h1>
-  <p>We design, prototype, and build — from rapid 3D printing to industrial automation. Explore our work and get in touch to start your project.</p>
+  <h1>Engineering & Manufacturing,<br> done right.</h1>
+  <p>From CAD to shop floor, we design, prototype, and automate. Orange-grey-black visual identity with a modern, crisp UI.</p>
   <a class="cta" href="contact.html">Start a Project</a>
 </section>
 
-<section class="grid mt-4">
+<div class="section-title"><span class="dot"></span><h2>What we do</h2></div>
+<section class="grid">
   <div class="card">
     <h3>Product Design</h3>
-    <p>CAD, FEA-informed iteration, and manufacturable designs tailored to your requirements.</p>
+    <p>CAD, DFM, and iteration with measurable outcomes.</p>
   </div>
   <div class="card">
-    <h3>Prototyping</h3>
-    <p>Rapid 3D printing and machining to validate form, fit, and function quickly.</p>
+    <h3>Rapid Prototyping</h3>
+    <p>3D printing and machining to validate quickly.</p>
   </div>
   <div class="card">
     <h3>Automation</h3>
-    <p>PLC, robotics, and custom tooling to streamline your manufacturing line.</p>
+    <p>PLC, robotics, and tooling to scale your process.</p>
+  </div>
+  <div class="card">
+    <h3>Consulting</h3>
+    <p>From architecture to implementation — efficient and pragmatic.</p>
   </div>
 </section>
 
@@ -44,12 +56,10 @@
   <footer class="footer">
     <div class="container inner">
       <div>&copy; <span id="year"></span> Estepp Innovations</div>
-      <div><small class="muted">Built on GitHub Pages</small></div>
+      <div class="links"><a href="about.html">About</a><a href="contact.html">Contact</a></div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
