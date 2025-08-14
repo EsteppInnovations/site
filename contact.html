@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Estepp Innovations</title>
+  <meta name="description" content="Estepp Innovations — Engineering, manufacturing, and design solutions.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand"><a href="index.html">Estepp Innovations</a></div>
+      <nav class="menu"><a href="index.html" class="">Home</a> <a href="about.html" class="">About</a> <a href="contact.html" class="active">Contact</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+<section class="hero">
+  <h1>Contact</h1>
+  <p>Tell us about your project. We’ll get back to you promptly.</p>
+</section>
+
+<section class="mt-4">
+  <div class="card">
+    <form name="contact">
+      <label class="mt-2">Name</label>
+      <input type="text" name="name" placeholder="Your name" required>
+      <label class="mt-2">Email</label>
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <label class="mt-2">Message</label>
+      <textarea name="message" placeholder="What can we build together?" required></textarea>
+      <button class="btn" type="submit" onclick="alert('This is a static demo form. Connect a form service to receive submissions.')">Send</button>
+    </form>
+    <p class="mt-3"><small class="muted">Tip: Connect a form handler like Formspree, Basin, or Netlify Forms to receive messages.</small></p>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container inner">
+      <div>&copy; <span id="year"></span> Estepp Innovations</div>
+      <div><small class="muted">Built on GitHub Pages</small></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
