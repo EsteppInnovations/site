@@ -119,3 +119,54 @@ body{
 .mt-2{margin-top:.5rem}
 .mt-3{margin-top:.75rem}
 .mt-4{margin-top:1rem}
+
+/* Modern form */
+.form .hp { display:none !important; } /* honeypot */
+.fields {
+  display:grid; gap:1rem;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+}
+@media (max-width: 720px){ .fields { grid-template-columns: 1fr; } }
+
+.field { position:relative; }
+.field.full { grid-column: 1 / -1; }
+
+.input{
+  width:100%; border:1px solid var(--grey-200); background:#fff;
+  padding:1rem .9rem .9rem; border-radius:12px; outline:0;
+  font:inherit; color:var(--grey-800); transition: border-color .15s, box-shadow .15s, background .15s;
+}
+.input.area{ min-height: 160px; resize: vertical; }
+
+.field .label{
+  position:absolute; left:.9rem; top:.95rem; color:#6b7280;
+  pointer-events:none; transition: all .12s ease;
+  background:#fff; padding:0 .25rem; border-radius:6px;
+}
+
+/* floating label behavior */
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label,
+.input:not([value=""]) + .label{
+  top:-.55rem; font-size:.75rem; color:var(--grey-700);
+  box-shadow: 0 0 0 4px #fff;
+}
+
+/* focus + invalid states */
+.input:focus{
+  border-color: var(--orange); 
+  box-shadow: 0 0 0 3px rgba(249,115,22,.15);
+}
+.input:invalid:focus{
+  border-color:#ef4444;
+  box-shadow: 0 0 0 3px rgba(239,68,68,.15);
+}
+
+/* buttons */
+.btn{
+  display:inline-block; border:0; border-radius:12px; cursor:pointer;
+  padding:.85rem 1rem; font-weight:800; background:var(--black); color:#fff;
+}
+.btn:hover{ opacity:.93; }
+.btn.accent{ background: var(--orange); }
+.btn.accent:hover{ background: var(--orange-600); }
