@@ -170,3 +170,31 @@ body{
 .btn:hover{ opacity:.93; }
 .btn.accent{ background: var(--orange); }
 .btn.accent:hover{ background: var(--orange-600); }
+
+/* --- Modern Accent Button --- */
+.btn.accent {
+  display: inline-block;
+  border: none;
+  border-radius: 12px;
+  padding: 0.95rem 1.4rem;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, var(--black) 0%, var(--orange-600) 100%);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.25s ease;
+}
+
+.btn.accent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  background: linear-gradient(135deg, var(--orange) 0%, var(--black) 100%);
+}
+
+/* Optional subtle click feedback */
+.btn.accent:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
