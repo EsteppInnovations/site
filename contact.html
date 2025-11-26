@@ -13,12 +13,20 @@
       <div class="brand">
         <span class="badge">EI</span><a href="index.html">Estepp Innovations</a>
       </div>
-      <nav class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a></nav>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lithophane.html">Lithophane Request</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
       <button class="cta-top" onclick="location.href='contact.html'">Get a Quote</button>
       <div class="hamburger" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></div>
     </div>
     <div id="mobile-menu" class="mobile">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="lithophane.html">Lithophane Request</a>
+      <a href="contact.html" class="active">Contact</a>
       <a href="contact.html"><strong>Get a Quote →</strong></a>
     </div>
   </header>
@@ -34,31 +42,30 @@
         <h3 style="margin-bottom:.5rem;">Start a Project</h3>
         <p class="mt-2">What are you building? Share a few details and we’ll follow up.</p>
 
-        <!-- Replace action with your Formspree/Basin/Netlify endpoint to receive submissions -->
+        <!-- If you're using an external form (Opnform, Formspree, etc.), you can embed or wire it here. -->
         <form class="form mt-3" action="#" method="POST" novalidate>
-          <!-- Honeypot -->
           <input type="text" name="_hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-          <div class="fields">
-            <label class="field">
-              <input class="input" type="text" name="name" required>
-              <span class="label">Name</span>
-            </label>
+          <div class="fields single-column">
+            <div class="field">
+              <label for="name">Name</label>
+              <input class="input" type="text" id="name" name="name" placeholder="First Last" required>
+            </div>
 
-            <label class="field">
-              <input class="input" type="email" name="email" required>
-              <span class="label">Email</span>
-            </label>
+            <div class="field">
+              <label for="email">Email</label>
+              <input class="input" type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
 
-            <label class="field full">
-              <input class="input" type="text" name="subject">
-              <span class="label">Subject (optional)</span>
-            </label>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input class="input" type="text" id="subject" name="subject" placeholder="Project or topic">
+            </div>
 
-            <label class="field full">
-              <textarea class="input area" name="message" required></textarea>
-              <span class="label">Project details</span>
-            </label>
+            <div class="field">
+              <label for="message">Project details</label>
+              <textarea class="input area" id="message" name="message" placeholder="Describe what you’re looking to build…" required></textarea>
+            </div>
           </div>
 
           <button class="btn accent" type="submit">Start a Project</button>
@@ -71,7 +78,7 @@
         <p>Email: <a href="mailto:info@esteppinnovations.com">info@esteppinnovations.com</a></p>
         <p class="mt-2">Based in Michigan, USA</p>
         <hr class="mt-4" style="border:none;border-top:1px solid var(--grey-200)">
-        <p class="mt-3"><small class="muted">Tip: hook this form to Formspree/Basin/Netlify when you’re ready to receive submissions.</small></p>
+        <p class="mt-3"><small class="muted">You can also reach out directly if you prefer to skip the form.</small></p>
       </div>
     </section>
   </main>
