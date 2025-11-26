@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lithophane Request — Estepp Innovations</title>
+  <meta name="description" content="Request a custom lithophane from Estepp Innovations.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">
+        <span class="badge">EI</span><a href="index.html">Estepp Innovations</a>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="lithophane.html" class="active">Lithophane Request</a>
+      </nav>
+      <button class="cta-top" onclick="location.href='contact.html'">Get a Quote</button>
+      <div class="hamburger" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></div>
+    </div>
+    <div id="mobile-menu" class="mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="lithophane.html" class="active">Lithophane Request</a>
+      <a href="contact.html"><strong>Get a Quote →</strong></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Lithophane Request</h1>
+      <p>Fill out the form below to start a custom lithophane project. You’ll be prompted to send us an email with all of your details.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3 style="margin-bottom:.5rem;">Project Details</h3>
+        <p class="mt-2">We’ll review your info and follow up with pricing and next steps.</p>
+
+        <form id="litho-form" class="form mt-3">
+          <div class="fields single-column">
+            <!-- Name -->
+            <div class="field">
+              <label for="name">Name</label>
+              <input
+                class="input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="First Last"
+                required>
+            </div>
+
+            <!-- Phone -->
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input
+                class="input"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="1-555-555-5555">
+            </div>
+
+            <!-- Shipping Address -->
+            <div class="field">
+              <label for="shipping">Shipping Address</label>
+              <input
+                class="input"
+                type="text"
+                id="shipping"
+                name="shipping"
+                placeholder="Street, City, State"
+                required>
+            </div>
+
+            <!-- Email -->
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="youremail@email.com"
+                required>
+            </div>
+
+            <!-- Size -->
+            <div class="field">
+              <label for="size">Size</label>
+              <input
+                class="input"
+                type="text"
+                id="size"
+                name="size"
+                placeholder="Size (e.g., 4x6 in, 100mm x 150mm)">
+            </div>
+
+            <!-- Type of Lithophane -->
+            <div class="field">
+              <span style="display:block;margin-bottom:.25rem;font-size:.85rem;color:#4b5563;">
+                Type of Lithophane
+              </span>
+
+              <div class="checkbox-row">
+                <label class="check">
+                  <input type="checkbox" name="type" value="Box">
+                  <span>Box</span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="type" value="Night Lamp">
+                  <span>Night Lamp</span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="type" value="Flat Framed">
+                  <span>Flat Framed</span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="type" value="Bulb">
+                  <span>Bulb</span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="type" value="Globe">
+                  <span>Globe</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn accent" type="submit">Send Lithophane Request</button>
+          <p class="muted mt-2"><small>This will open your email client with all the details pre-filled to send to jestepp@esteppinnovations.com.</small></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container inner">
+      <div>&copy; <span id="year"></span> Estepp Innovations</div>
+      <div class="links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+        <a class="social" href="https://discord.gg/tR5H3EMP" target="_blank" rel="noopener" aria-label="Join us on Discord" title="Join us on Discord">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.369A19.79 19.79 0 0 0 16.558 3c-.2.35-.43.814-.59 1.18a18.93 18.93 0 0 0-5.936 0c-.16-.366-.39-.83-.59-1.18A19.736 19.736 0 0 0 3.135 4.37C2.83 9.033 2.1 13.58 2.343 18.061a19.9 19.9 0 0 0 3.997 2.02c.31-.43.585-.885.82-1.362-.45-.2-.883-.41-1.3-.626.11-.08.217-.164.321-.249 2.507 1.174 5.247 1.174 7.75 0 .105.086.212.17.321.25-.417.216-.85.424-1.3.625.235.477.51.932.82 1.362a19.9 19.9 0 0 0 3.999-2.02c.327-5.64-.56-10.148-3.877-13.692zM9.509 15.26c-.73 0-1.323-.67-1.323-1.497 0-.829.593-1.5 1.323-1.5.73 0 1.324.671 1.324 1.5 0 .827-.594 1.497-1.324 1.497zm5 0c-.73 0-1.324-.67-1.324-1.497 0-.829.594-1.5 1.324-1.5.73 0 1.323.671 1.323 1.5 0 .827-.593 1.497-1.323 1.497z"/></svg>
+          <span>Discord</span>
+        </a>
+
+        <a class="social" href="https://github.com/esteppinnovations" target="_blank" rel="noopener" aria-label="View our GitHub" title="View our GitHub">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.649.5.5 5.649.5 12c0 5.086 3.292 9.387 7.868 10.915.575.106.785-.25.785-.555 0-.273-.01-1.183-.015-2.146-3.201.696-3.878-1.542-3.878-1.542-.523-1.33-1.277-1.683-1.277-1.683-1.043-.713.079-.699.079-.699 1.152.081 1.758 1.183 1.758 1.183 1.026 1.756 2.69 1.249 3.344.956.104-.743.402-1.25.73-1.538-2.555-.291-5.238-1.277-5.238-5.683 0-1.256.45-2.282 1.183-3.087-.119-.291-.513-1.463.112-3.051 0 0 .964-.309 3.159 1.179a11.02 11.02 0 0 1 2.88-.387c.977.005 1.962.132 2.88.387 2.194-1.488 3.157-1.179 3.157-1.179.627 1.588.234 2.76.115 3.051.735.805 1.182 1.831 1.182 3.087 0 4.416-2.687 5.389-5.248 5.675.413.356.78 1.062.78 2.14 0 1.544-.014 2.785-.014 3.164 0 .308.208.666.79.553C20.713 21.383 24 17.083 24 12c0-6.351-5.149-11.5-12-11.5z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Build a mailto: URL from form fields and open default mail client
+    document.getElementById('litho-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const shipping = document.getElementById('shipping').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const size = document.getElementById('size').value.trim();
+
+      // Collect checked types
+      const typeNodes = document.querySelectorAll('input[name="type"]:checked');
+      const types = Array.from(typeNodes).map(t => t.value).join(', ') || 'Not specified';
+
+      const subject = 'New Lithophane Request';
+      const bodyLines = [
+        'New lithophane request from the website:',
+        '',
+        'Name: ' + name,
+        'Phone: ' + phone,
+        'Email: ' + email,
+        'Shipping Address: ' + shipping,
+        'Size: ' + size,
+        'Type of Lithophane: ' + types,
+        '',
+        'Sent from esteppinnovations.com'
+      ];
+
+      const mailto = 'mailto:jestepp@esteppinnovations.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>
