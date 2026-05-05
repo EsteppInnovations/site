@@ -4,6 +4,7 @@ A responsive 4-page static site with a sticky scrolling menu, mobile hamburger, 
 
 ## Pages
 - `shop.html` - Shop
+- `archive.html` - Project Archive
 - `index.html` — Home
 - `about.html` — About
 - `contact.html` — Contact

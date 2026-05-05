@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Estepp Innovations — Engineering & Prototyping</title>
-  <meta name="description" content="Estepp Innovations — Engineering, prototyping, and automation from CAD to shop floor.">
+  <title>Project Archive &mdash; Estepp Innovations</title>
+  <meta name="description" content="A project archive of Estepp Innovations products, prototypes, and custom builds.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -14,10 +14,10 @@
         <span class="badge">EI</span><a href="index.html">Estepp Innovations</a>
       </div>
       <nav class="menu">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="shop.html">Shop</a>
-        <a href="archive.html">Archive</a>
+        <a href="archive.html" class="active">Archive</a>
         <a href="lithophane.html">Lithophane Request</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -25,55 +25,66 @@
       <div class="hamburger" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></div>
     </div>
     <div id="mobile-menu" class="mobile">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="shop.html">Shop</a>
-      <a href="archive.html">Archive</a>
+      <a href="archive.html" class="active">Archive</a>
       <a href="lithophane.html">Lithophane Request</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html"><strong>Get a Quote →</strong></a>
+      <a href="contact.html"><strong>Get a Quote &rarr;</strong></a>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h1>Engineering &amp; Prototyping,<br>done right.</h1>
-      <p>From CAD to shop floor, we design, prototype, and automate — with practical, production-minded solutions.</p>
-      <div class="hero-actions">
-        <button class="btn accent" onclick="location.href='contact.html'">Start a Project</button>
-        <button class="btn ghost" onclick="location.href='lithophane.html'">Request a Lithophane</button>
-      </div>
+    <section class="hero shop-hero">
+      <h1>Project Archive</h1>
+      <p>A look at products, prototypes, and custom builds from Estepp Innovations.</p>
     </section>
 
-    <div class="section-title"><span class="dot"></span><h2>What we do</h2></div>
-    <section class="grid">
-      <div class="card">
-        <h3>Product Design</h3>
-        <p>CAD in Autodesk Fusion 360 is our home base. We design parts and assemblies with real-world manufacturability in mind.</p>
-      </div>
-      <div class="card">
-        <h3>Rapid Prototyping</h3>
-        <p>3D printing and machine prototyping — design done in-house while machining and builds are outsourced to trusted partners.</p>
-      </div>
-      <div class="card">
-        <h3>Automation</h3>
-        <p>Pi- and Arduino-driven robotics, fixtures, and tooling to automate repetitive work and tighten your process.</p>
-      </div>
-    </section>
+    <div class="section-title"><span class="dot"></span><h2>Recent Work</h2></div>
+    <section class="grid shop-grid">
+      <article class="card product-card">
+        <img class="product-image" src="assets/img/rugged-box.svg" alt="Rugged Vials Box">
+        <div class="product-body">
+          <p class="eyebrow">Storage design</p>
+          <h3>Rugged Vials Box</h3>
+          <p>A tough field-ready box designed to organize and protect small vials during transport, storage, and repeated handling.</p>
+          <div class="product-meta">
+            <strong>Rugged storage</strong>
+            <span>Protective enclosure concept</span>
+          </div>
+        </div>
+      </article>
 
-    <div class="section-title"><span class="dot"></span><h2>Featured: Custom Lithophanes</h2></div>
-    <section class="grid">
-      <div class="card">
-        <h3>Turn Photos into Light</h3>
-        <p>We create lithophanes — 3D printed panels that come to life when backlit. From night lamps and framed panels to globes and custom enclosures.</p>
-        <p class="mt-2">Perfect for gifts, display pieces, and one-off lighting concepts.</p>
-        <button class="btn accent mt-3" onclick="location.href='lithophane.html'">Request a Lithophane</button>
-      </div>
-      <div class="card">
-        <h3>Engineering-Grade Prints</h3>
-        <p>We use carefully selected, engineering-grade filaments and tuned print settings to balance detail, durability, and thermal stability.</p>
-        <p class="mt-2">Tell us how and where it will be used — we’ll recommend the right approach.</p>
-      </div>
+      <article class="card product-card">
+        <div class="product-media">
+          <span>Lithophane</span>
+        </div>
+        <div class="product-body">
+          <p class="eyebrow">Custom lighting</p>
+          <h3>Lithophane Display</h3>
+          <p>A custom printed photo panel tuned for clean backlighting, balanced detail, and a simple finished display form.</p>
+          <div class="product-meta">
+            <strong>3D printed display</strong>
+            <span>Photo-to-light project</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product-card">
+        <div class="product-media product-media-dark">
+          <span>Fixture</span>
+        </div>
+        <div class="product-body">
+          <p class="eyebrow">Process support</p>
+          <h3>Assembly Fixture</h3>
+          <p>A practical fixture concept for holding parts consistently during small-batch assembly, inspection, or repeatable shop work.</p>
+          <div class="product-meta">
+            <strong>Shop workflow</strong>
+            <span>Design and prototyping support</span>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
 
@@ -83,7 +94,7 @@
       <div class="links">
         <a href="about.html">About</a>
         <a href="shop.html">Shop</a>
-        <a href="archive.html">Archive</a>
+        <a href="archive.html" class="active">Archive</a>
         <a href="contact.html">Contact</a>
         <a href="https://g.page/r/CcuL-R8AL5ssEBM/review" target="_blank" rel="noopener">Leave a Review</a>
         <a class="social" href="https://discord.gg/tR5H3EMP" target="_blank" rel="noopener" aria-label="Join us on Discord" title="Join us on Discord">

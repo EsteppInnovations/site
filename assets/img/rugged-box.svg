@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Rugged Box</title>
+  <desc id="desc">Illustration of a black rugged storage box with orange accents.</desc>
+  <rect width="900" height="560" fill="#f3f4f6"/>
+  <rect x="118" y="126" width="664" height="332" rx="34" fill="#111827"/>
+  <rect x="150" y="158" width="600" height="268" rx="24" fill="#1f2937"/>
+  <rect x="187" y="196" width="526" height="188" rx="16" fill="#0b0f16"/>
+  <rect x="228" y="226" width="444" height="128" rx="12" fill="#374151"/>
+  <rect x="118" y="263" width="664" height="34" fill="#f97316"/>
+  <rect x="118" y="126" width="664" height="332" rx="34" fill="none" stroke="#0b0f16" stroke-width="16"/>
+  <rect x="176" y="105" width="112" height="52" rx="14" fill="#111827"/>
+  <rect x="612" y="105" width="112" height="52" rx="14" fill="#111827"/>
+  <rect x="389" y="99" width="122" height="45" rx="18" fill="#0b0f16"/>
+  <rect x="413" y="114" width="74" height="15" rx="7" fill="#f97316"/>
+  <circle cx="183" cy="351" r="15" fill="#f97316"/>
+  <circle cx="717" cy="351" r="15" fill="#f97316"/>
+  <path d="M254 458h392l-36 48H290z" fill="#111827"/>
+  <path d="M319 234h262v34H319zM319 300h262v22H319z" fill="#f9fafb" opacity=".82"/>
+</svg>
