@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lithophane Request — Estepp Innovations</title>
-  <meta name="description" content="Request a custom lithophane from Estepp Innovations.">
+  <title>Shop &mdash; Estepp Innovations</title>
+  <meta name="description" content="Shop Estepp Innovations products and custom project deposits through Square checkout.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -16,8 +16,8 @@
       <nav class="menu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="shop.html">Shop</a>
-        <a href="lithophane.html" class="active">Lithophane Request</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="lithophane.html">Lithophane Request</a>
         <a href="contact.html">Contact</a>
       </nav>
       <button class="cta-top" onclick="location.href='contact.html'">Get a Quote</button>
@@ -26,51 +26,74 @@
     <div id="mobile-menu" class="mobile">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="shop.html">Shop</a>
-      <a href="lithophane.html" class="active">Lithophane Request</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="lithophane.html">Lithophane Request</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html"><strong>Get a Quote →</strong></a>
+      <a href="contact.html"><strong>Get a Quote &rarr;</strong></a>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h1>Lithophane Request</h1>
-      <p>Use the form below to request a custom lithophane. We’ll review your details and get back to you with options and pricing.</p>
+    <section class="hero shop-hero">
+      <h1>Shop</h1>
+      <p>Order ready-to-buy products and project deposits through secure Square checkout.</p>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h3 style="margin-bottom:.5rem;">Request a Lithophane</h3>
-        <p class="mt-2">
-          Provide your contact information, size, type, and any special notes. You can also attach your reference images directly in the form.
-        </p>
-
-        <!-- Opnform iframe only; script is loaded globally at the bottom -->
-        <div style="margin-top:1rem;">
-          <iframe
-            style="border:none;width:100%;min-height:600px;"
-            id="contact-form-g9murv"
-            src="https://opnform.com/forms/contact-form-g9murv">
-          </iframe>
+    <div class="section-title"><span class="dot"></span><h2>Products</h2></div>
+    <section class="grid shop-grid">
+      <article class="card product-card">
+        <div class="product-media">
+          <span>Lithophane</span>
         </div>
-      </div>
+        <div class="product-body">
+          <p class="eyebrow">Custom order</p>
+          <h3>Custom Lithophane Deposit</h3>
+          <p>Start a custom lithophane order. Final price depends on size, style, lighting, and shipping.</p>
+          <div class="product-meta">
+            <strong>$25.00 deposit</strong>
+            <span>Applied to final invoice</span>
+          </div>
+          <a class="btn accent full-width" href="https://square.link/u/aiESJYRc" target="_blank" rel="noopener">Checkout with Square</a>
+        </div>
+      </article>
 
-      <div class="card">
-        <h3>What to Include</h3>
-        <p class="mt-2">To speed up your quote, please include:</p>
-        <ul class="mt-2" style="padding-left:1.1rem;">
-          <li>Your full name and best contact email</li>
-          <li>Phone number (optional, but helpful for clarifications)</li>
-          <li>Shipping address (Street, City, State)</li>
-          <li>Approximate size of the lithophane</li>
-          <li>Type of lithophane (Box, Night Lamp, Flat Framed, Bulb, Globe)</li>
-        </ul>
-        <p class="mt-3">
-          Once submitted, your request will be reviewed and you’ll receive a follow-up email from
-          <strong>jestepp@esteppinnovations.com</strong>.
-        </p>
-      </div>
+      <article class="card product-card">
+        <div class="product-media product-media-dark">
+          <span>Prototype</span>
+        </div>
+        <div class="product-body">
+          <p class="eyebrow">Project deposit</p>
+          <h3>Engineering Project Deposit</h3>
+          <p>Reserve design or prototyping time for a scoped project after we confirm the details with you.</p>
+          <div class="product-meta">
+            <strong>$100.00 deposit</strong>
+            <span>Applied to project balance</span>
+          </div>
+          <a class="btn accent full-width" href="https://square.link/u/REPLACE_PROJECT_DEPOSIT" target="_blank" rel="noopener">Checkout with Square</a>
+        </div>
+      </article>
+
+      <article class="card product-card">
+        <div class="product-media product-media-light">
+          <span>Invoice</span>
+        </div>
+        <div class="product-body">
+          <p class="eyebrow">Custom amount</p>
+          <h3>Pay an Invoice</h3>
+          <p>Use this option when you have already received an invoice or custom payment link from Estepp Innovations.</p>
+          <div class="product-meta">
+            <strong>Custom total</strong>
+            <span>Use your invoice amount</span>
+          </div>
+          <a class="btn accent full-width" href="https://square.link/u/REPLACE_INVOICE_PAYMENT" target="_blank" rel="noopener">Checkout with Square</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="card shop-note mt-4">
+      <h3>Need a quote first?</h3>
+      <p>For custom work, send the details before checking out so we can confirm material, size, schedule, and shipping.</p>
+      <button class="btn mt-3" onclick="location.href='contact.html'">Contact Us</button>
     </section>
   </main>
 
@@ -79,16 +102,14 @@
       <div>&copy; <span id="year"></span> Estepp Innovations</div>
       <div class="links">
         <a href="about.html">About</a>
-        <a href="shop.html">Shop</a>
+        <a href="shop.html" class="active">Shop</a>
         <a href="contact.html">Contact</a>
-
         <a class="social" href="https://discord.gg/tR5H3EMP" target="_blank" rel="noopener" aria-label="Join us on Discord" title="Join us on Discord">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
             <path d="M20.317 4.369A19.79 19.79 0 0 0 16.558 3c-.2.35-.43.814-.59 1.18a18.93 18.93 0 0 0-5.936 0c-.16-.366-.39-.83-.59-1.18A19.736 19.736 0 0 0 3.135 4.37C2.83 9.033 2.1 13.58 2.343 18.061a19.9 19.9 0 0 0 3.997 2.02c.31-.43.585-.885.82-1.362-.45-.2-.883-.41-1.3-.626.11-.08.217-.164.321-.249 2.507 1.174 5.247 1.174 7.75 0 .105.086.212.17.321.25-.417.216-.85.424-1.3.625.235.477.51.932.82 1.362a19.9 19.9 0 0 0 3.999-2.02c.327-5.64-.56-10.148-3.877-13.692zM9.509 15.26c-.73 0-1.323-.67-1.323-1.497 0-.829.593-1.5 1.323-1.5.73 0 1.324.671 1.324 1.5 0 .827-.594 1.497-1.324 1.497zm5 0c-.73 0-1.324-.67-1.324-1.497 0-.829.594-1.5 1.324-1.5.73 0 1.323.671 1.323 1.5 0 .827-.593 1.497-1.323 1.497z"/>
           </svg>
           <span>Discord</span>
         </a>
-
         <a class="social" href="https://github.com/esteppinnovations" target="_blank" rel="noopener" aria-label="View our GitHub" title="View our GitHub">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 .5C5.649.5.5 5.649.5 12c0 5.086 3.292 9.387 7.868 10.915.575.106.785-.25.785-.555 0-.273-.01-1.183-.015-2.146-3.201.696-3.878-1.542-3.878-1.542-.523-1.33-1.277-1.683-1.277-1.683-1.043-.713.079-.699.079-.699 1.152.081 1.758 1.183 1.758 1.183 1.026 1.756 2.69 1.249 3.344.956.104-.743.402-1.25.73-1.538-2.555-.291-5.238-1.277-5.238-5.683 0-1.256.45-2.282 1.183-3.087-.119-.291-.513-1.463.112-3.051 0 0 .964-.309 3.159 1.179a11.02 11.02 0 0 1 2.88-.387c.977.005 1.962.132 2.88.387 2.194-1.488 3.157-1.179 3.157-1.179.627 1.588.234 2.76.115 3.051.735.805 1.182 1.831 1.182 3.087 0 4.416-2.687 5.389-5.248 5.675.413.356.78 1.062.78 2.14 0 1.544-.014 2.785-.014 3.164 0 .308.208.666.79.553C20.713 21.383 24 17.083 24 12c0-6.351-5.149-11.5-12-11.5z"/>
@@ -99,15 +120,6 @@
     </div>
   </footer>
 
-  <!-- 1) Your site JS: wires up hamburger/menu immediately -->
   <script src="assets/js/main.js"></script>
-
-  <!-- 2) Opnform widget: loaded after, non-blocking -->
-  <script
-    type="text/javascript"
-    src="https://opnform.com/widgets/iframe.min.js"
-    defer
-    onload="initEmbed('contact-form-g9murv')">
-  </script>
 </body>
 </html>

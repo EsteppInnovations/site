@@ -1,8 +1,9 @@
 # Estepp Innovations — Modern Theme (Orange/Grey/Black)
 
-A responsive 3-page static site with a sticky scrolling menu, mobile hamburger, and clean orange/grey/black palette.
+A responsive 4-page static site with a sticky scrolling menu, mobile hamburger, and clean orange/grey/black palette.
 
 ## Pages
+- `shop.html` - Shop
 - `index.html` — Home
 - `about.html` — About
 - `contact.html` — Contact
