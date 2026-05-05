@@ -30,3 +30,63 @@ document.querySelectorAll('#mobile-menu a').forEach(a => {
 // Footer year
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
+
+// Product image gallery
+const galleryModal = document.getElementById('gallery-modal');
+const galleryImage = document.getElementById('gallery-image');
+const galleryCaption = document.getElementById('gallery-caption');
+const galleryPrev = document.querySelector('[data-gallery-prev]');
+const galleryNext = document.querySelector('[data-gallery-next]');
+let galleryImages = [];
+let galleryIndex = 0;
+let galleryTitle = '';
+
+const setGalleryImage = () => {
+  if (!galleryModal || !galleryImage || galleryImages.length === 0) return;
+  galleryImage.src = galleryImages[galleryIndex];
+  galleryImage.alt = galleryTitle;
+  if (galleryCaption) galleryCaption.textContent = galleryTitle;
+  const hasMultiple = galleryImages.length > 1;
+  if (galleryPrev) galleryPrev.hidden = !hasMultiple;
+  if (galleryNext) galleryNext.hidden = !hasMultiple;
+};
+
+document.querySelectorAll('[data-gallery-images]').forEach(button => {
+  button.addEventListener('click', () => {
+    galleryImages = button.dataset.galleryImages.split(',').map(item => item.trim()).filter(Boolean);
+    galleryTitle = button.dataset.galleryTitle || button.querySelector('img')?.alt || 'Product image';
+    galleryIndex = 0;
+    setGalleryImage();
+    galleryModal.classList.add('open');
+    galleryModal.setAttribute('aria-hidden', 'false');
+  });
+});
+
+document.querySelectorAll('[data-gallery-close]').forEach(button => {
+  button.addEventListener('click', () => {
+    galleryModal.classList.remove('open');
+    galleryModal.setAttribute('aria-hidden', 'true');
+    if (galleryImage) galleryImage.src = '';
+  });
+});
+
+if (galleryPrev) {
+  galleryPrev.addEventListener('click', () => {
+    galleryIndex = (galleryIndex - 1 + galleryImages.length) % galleryImages.length;
+    setGalleryImage();
+  });
+}
+
+if (galleryNext) {
+  galleryNext.addEventListener('click', () => {
+    galleryIndex = (galleryIndex + 1) % galleryImages.length;
+    setGalleryImage();
+  });
+}
+
+document.addEventListener('keydown', event => {
+  if (!galleryModal || !galleryModal.classList.contains('open')) return;
+  if (event.key === 'Escape') document.querySelector('[data-gallery-close]')?.click();
+  if (event.key === 'ArrowLeft' && galleryImages.length > 1) galleryPrev?.click();
+  if (event.key === 'ArrowRight' && galleryImages.length > 1) galleryNext?.click();
+});
