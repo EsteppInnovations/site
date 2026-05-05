@@ -128,10 +128,6 @@ body{
 .gallery-prev{left:.7rem}
 .gallery-next{right:.7rem}
 .gallery-nav[hidden]{display:none}
-.gallery-caption{
-  position:absolute;left:0;right:0;bottom:0;padding:.55rem .8rem;
-  background:rgba(255,255,255,.78);color:var(--grey-800);font-weight:800;text-align:center
-}
 .product-media{
   min-height:145px;display:flex;align-items:flex-end;padding:1rem;
   background:linear-gradient(135deg, #fff7ed, #f97316);color:var(--black);

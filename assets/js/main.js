@@ -34,7 +34,6 @@ if (year) year.textContent = new Date().getFullYear();
 // Product image gallery
 const galleryModal = document.getElementById('gallery-modal');
 const galleryImage = document.getElementById('gallery-image');
-const galleryCaption = document.getElementById('gallery-caption');
 const galleryPrev = document.querySelector('[data-gallery-prev]');
 const galleryNext = document.querySelector('[data-gallery-next]');
 let galleryImages = [];
@@ -45,7 +44,6 @@ const setGalleryImage = () => {
   if (!galleryModal || !galleryImage || galleryImages.length === 0) return;
   galleryImage.src = galleryImages[galleryIndex];
   galleryImage.alt = galleryTitle;
-  if (galleryCaption) galleryCaption.textContent = galleryTitle;
   const hasMultiple = galleryImages.length > 1;
   if (galleryPrev) galleryPrev.hidden = !hasMultiple;
   if (galleryNext) galleryNext.hidden = !hasMultiple;
